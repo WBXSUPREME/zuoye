@@ -19,7 +19,7 @@ const classification = async () => { //分类数据
 const list = async () => { //分类数据
  let data = await api({
   url: 'course/api/course/search',
-  method: 'get',
+  method: 'post',
  })
  return data
 }

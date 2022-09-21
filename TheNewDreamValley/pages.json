@@ -61,6 +61,16 @@
             }
             
         }
+        
+        ,{
+            "path" : "pages/newrecent/newrecent",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"tabBar": {
 		"color": "#dbdbdb",

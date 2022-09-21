@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="zbox">
+        <div class="left">1</div>
+        <div class="right">
+            <p>阿斯达克画法几何手动阀</p>
+            <p class="mls">梦老师</p>
+            <div class="three">
+                <li>87.18</li>
+                <li>人在学</li>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+    .zbox{
+        width: 300px;
+        height: 150px;
+        background-color: skyblue;
+        display: grid;
+        grid-template-columns: 100px 200px;
+
+    }
+    .left{
+        background-color: yellow;
+    }
+    .right{
+        background-color: rgb(202, 94, 16);
+    }
+    .three{
+        background-color: red;
+        width: 199px;
+        height: 20px;
+        display: grid;
+        grid-template-columns: 60px 60px;
+        grid-auto-flow: row;
+    }
+    li{
+        list-style: none;
+    }
+    .mls{
+        margin-bottom: 0;
+    }
+</style>
+</html>

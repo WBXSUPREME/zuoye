@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .mian {
+        width: 500px;
+        height: 500px;
+        background-color: skyblue;
+        display: grid;
+        grid-template-columns: [col1] 1fr [col2]1fr [col3]1fr [col4];
+        grid-template-rows: [col1] 1fr [col2]1fr [col3]1fr [col4];
+    }
+
+    .mian div:nth-of-type(1) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color: pink;
+    }
+
+    .mian div:nth-of-type(2) {
+        background: slategray
+    }
+</style>
+
+<body>
+    <div class="mian">
+        <div>asdfasd</div>
+        <div>asdfasd</div>
+        <div>asdfasd</div>
+        <div>asdfasd</div>
+        <div>asdfasd</div>
+        <div>asdfasd</div>
+        <div>asdfasd</div>
+        <div>asdfasd</div>
+        <div>asdfasd</div>
+        <div>asdfasd</div>
+        <div>asdfasd</div>
+    </div>
+</body>
+
+</html>
