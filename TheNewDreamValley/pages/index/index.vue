@@ -1,32 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@WBXSUPREME 
-WBXSUPREME
-/
-zuoye
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-zuoye/TheNewDreamValley/pages/index/index.vue
-@WBXSUPREME
-WBXSUPREME '新梦学谷'
-Latest commit f6cb3f1 yesterday
- History
- 1 contributor
-203 lines (170 sloc)  3.68 KB
-
 <template>
 	<view class="content">
 		<navigator url="../searchpages/searchpages">

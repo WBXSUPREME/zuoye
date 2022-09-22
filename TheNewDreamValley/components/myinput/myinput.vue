@@ -27,9 +27,11 @@
 		// background-color: red;
 		display: flex;
 		justify-content: center;
+		background-color: #0072b7;
 		align-items: center;
-		margin-bottom: 19px;
+		// margin-bottom: 40px;
 		position: fixed;
+		top: 0;
 		z-index: 999;
 		.input {
 			width: 98%;

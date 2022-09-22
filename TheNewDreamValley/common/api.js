@@ -16,7 +16,7 @@ const classification = async () => { //分类数据
  return data
 }
 
-const list = async () => { //分类数据
+const list = async () => { //首页分类数据
  let data = await api({
   url: 'course/api/course/search',
   method: 'post',
@@ -24,8 +24,29 @@ const list = async () => { //分类数据
  return data
 }
 
+const fenleilist = async () => { //分类侧边栏数据&&阅读页面头部导航栏
+ let data = await api({
+  url: 'article/api/category/label/list',
+  method: 'get',
+ })
+ return data
+}
+
+/** 阅读页面列表数据 */
+const readinglists = async () => { 
+ let data = await api({
+  url: 'article/api/article/search',
+  method: 'post',
+ })
+ return data
+}
+
+
+
 export{
 	swiper,
 	classification,
-	list
+	list,
+	fenleilist,
+	readinglists
 }
