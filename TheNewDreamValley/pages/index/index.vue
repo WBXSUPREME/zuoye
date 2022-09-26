@@ -34,7 +34,9 @@
 			</view>
 			<p class='qb'>全部></p>
 		</view>
-		<hot-list></hot-list>
+		<navigator url="/pages/index/indexxq">
+			<hot-list @pao='pao'></hot-list>
+		</navigator>
 		
 		<!-- 热门推荐 -->
 		<view class="hot-recommended">
@@ -82,6 +84,7 @@
 	} from '../../common/api.js'
 	import HotList from "/pages/Hotlist/Hotlist.vue"
 	import newrecent from "/pages/newrecent/newrecent.vue"
+	import {useRouter} from 'vue-router'
 	components: {
 		myinput,
 		HotList,
@@ -96,6 +99,7 @@
 		swiperlist: [],
 		classificationlist: [],
 	})
+	let router=useRouter()
 	const bgcimgages = (e) => {
 		// console.log(e);
 		// if(e.detail.current==0){
@@ -112,6 +116,13 @@
 		data.classificationlist = res.data
 		console.log(data.classificationlist);
 	})
+	
+	const pao=(id)=>{//接收hotlist组件传过来的id
+		console.log(id);
+		//跳转跳转！！！！！！！！！！！！！！！！！！！！！！！！！！！!!!!!!!!!!!!!!!!!!!!!!!!!!1
+		// router.push('/pages/index/indexxq')
+	}
+	
 </script>
 
 <style lang="scss">

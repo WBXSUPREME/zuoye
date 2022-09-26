@@ -55,20 +55,131 @@ request({method:'get',url:'https://api-hmugo-web.itheima.net/api/public/v1/home/
 
 // 定义一个接口，约束数组
 // 定义一个接口
-interface IArr {
-    [prop:number]: any
-}
-let arr:IArr = [1,2]
-console.log(arr);
+// interface IArr {
+//     [prop:number]: any
+// }
+// let arr:IArr = [1,2]
+// console.log(arr);
 
 
-interface IObj {
-    [prop:string]: string
-}
-let obj1:IObj = {
-    name:'123'
+// interface IObj {
+//     [prop:string]: string
+// }
+// let obj1:IObj = {
+//     name:'123'
+// }
+
+
+
+// 2.4.1数字枚举
+// 1.递增方式新增索引
+
+    /**
+     * 数字类型
+     * 1.语法使用的是es6的语法
+     */
+
+    // enum Status{
+    //     Uploading,
+    //     Success,
+    //     Falied
+    // }
+    // console.log(Status.Uploading);
+    // console.log(Status['Success']);
+    // console.log(Status.Falied);
+
+
+
+//    2.4.3字符串枚举
+ /***
+  * 字符串枚举
+  */
+// const getvalue=()=>{
+//     return 0
+// }
+
+// const names='小明'
+// enum message{
+//     /**错误信息 */
+//     Error='error mesage',
+//     SuccessError=200,
+//     ClientError=names
+// }
+
+
+
+// 1.枚举成员类型
+enum Animal{
+    Dog=1,
+    Cat=2,
 }
 
+interface Dog{
+    type:Animal.Dog
+
+}
+
+interface Cat{
+    type:Animal.Cat
+}
+
+let cat1:Cat={
+    type:Animal.Cat
+}
+let  dog:Dog={
+    type:Animal.Dog
+}
+
+
+
+// 2.联合枚举类型
+/***
+ * 联合数据类型
+ * 多种数据类型全部联合起来
+ */
+
+
+
+
+// interface接口
+// interface Info{
+//     firstName:string;
+//     lastName:string;
+// }
+// const getFullName=({firstName,lastName}:Info)=>
+// `${firstName} ${lastName}`
+
+interface Info{ 
+    name:string,
+    age:number,
+    sex:string,
+}
+
+const a=({name,age,sex}:Info)=>{
+  return `${name}${age}${sex}`
+}
+
+const ruls=a({name:'王丙戌',age:18,sex:"男"})
+console.log(ruls);
+
+
+interface Vegetables{
+    color?:string;
+    type:string;
+}
+const getVegetables=({color,type}:Vegetables)=>{
+    return `A ${color ? color +"" :""}${type}`;
+}
+getVegetables({
+    type:"tomato",
+    size:12,
+    price:1.2
+} as Vegetables)
+   
+
+
+    
+    
 
 
 

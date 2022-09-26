@@ -15,6 +15,7 @@
 <style>
 	/*每个页面公共css */
 	@import url("@/static/icon/iconfont.css");
+	@import url("@/static/icon/wbxicon/wbx/iconfont.css");
 	
 	
 </style>

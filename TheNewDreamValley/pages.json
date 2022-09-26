@@ -42,9 +42,46 @@
 				"enablePullDownRefresh": false
 			}
 
+		}, {
+			"path": "pages/course/course-details",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/Hotlist/Hotlist",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}
+
+		, {
+			"path": "pages/newrecent/newrecent",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/login/agreement",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
 		}
 	    ,{
-            "path" : "pages/course/course-details",
+            "path" : "pages/login/policy",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -53,17 +90,7 @@
             
         }
         ,{
-            "path" : "pages/Hotlist/Hotlist",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        
-        ,{
-            "path" : "pages/newrecent/newrecent",
+            "path" : "pages/index/indexxq",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",

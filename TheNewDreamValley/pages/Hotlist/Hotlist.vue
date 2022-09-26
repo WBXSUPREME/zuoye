@@ -4,7 +4,7 @@
 			<scroll-view class="scroll-view_H" scroll-x="true" @scroll="scroll" scroll-left="120">
 				<view id="demo1" class="scroll-view-item_H uni-bg-red">
 
-					<view class="box" v-for="item in data.hotlist.slice(1,6)" :key="item.id">
+					<view class="box" v-for="item in data.hotlist.slice(1,6)" :key="item.id" @click='pao(item.id)'>
 						<view class="img">
 							<img :src="item.mainImage" alt="">
 						</view>
@@ -18,12 +18,12 @@
 							</p>
 						</view>
 					</view>
-					
+
 				</view>
 
 
 				<view id="demo2" class="scroll-view-item_H uni-bg-green">
-					<view class="box" v-for="item in data.hotlist.slice(5,10)" :key="item.id">
+					<view class="box" v-for="item in data.hotlist.slice(5,10)" :key="item.id" @click='pao(item.id)'>
 						<view class="img">
 							<img :src="item.mainImage" alt="">
 						</view>
@@ -44,7 +44,7 @@
 	</view>
 </template>
 
-<script setup>
+<script>
 	import {
 		list
 	} from '../../common/api.js'
@@ -52,14 +52,27 @@
 		ref,
 		reactive
 	} from 'vue'
-	const data = reactive({
-		hotlist: []
-	})
-	list().then((res) => {
-		console.log(res.data.records);
-		data.hotlist = res.data.records
-		console.log(data.hotlist);
-	})
+	export default {
+		setup(props, context) {
+
+			const data = reactive({
+				hotlist: []
+			})
+			list().then((res) => {
+				console.log(res.data.records);
+				data.hotlist = res.data.records
+				console.log(data.hotlist);
+			})
+			const pao=(id)=>{
+				console.log(id);
+				context.emit('pao',id)
+			}
+			return{
+				data,
+				pao
+			}
+		}
+	}
 </script>
 
 <style lang="scss">
@@ -125,17 +138,20 @@
 				margin-top: 20rpx;
 				font-size: 32rpx;
 				color: darkgray;
+
 				img {
 					width: 34rpx;
 					height: 34rpx;
 				}
-				
+
 			}
+
 			p:nth-of-type(2) {
-				span{
+				span {
 					margin-right: 50rpx;
 					font-size: 32rpx;
-					img{
+
+					img {
 						width: 30rpx;
 						height: 30rpx;
 					}
