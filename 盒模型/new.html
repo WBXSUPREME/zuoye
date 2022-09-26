@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    let array = [1,2,3,[4,56,[4,7,8,9],4,5],55,78,[34,456]] 
+    let newarr=[]
+    for (let i = 0; i < array.length; i++) {
+        if(!newarr.includes(array[i])){
+            newarr.push(array[i])
+        }
+        
+    }
+    console.log(newarr.flat(Infinity));
+
+</script>
+</html>
