@@ -1,0 +1,68 @@
+<view class="zbox">
+    <view class="header">
+        <image src="/publice/img/微信图片_20220928190205.png"></image>
+        <view class="loginmbile">
+            <image class="loginimgs" src="/publice/img/loginimg.png"></image>
+            <view>登录/注册</view>
+        </view>
+        <image class="shezhi" src="/publice/img/设置.png"></image>
+    </view>
+    <view class="mbile">
+        <li>
+            <image src="/publice/img/myimg/我的订单.png"></image>
+            <view>我的订单</view>
+            <view>买课发快递</view>
+        </li>
+        <li>
+            <image src="/publice/img/myimg/兑换课程.png"></image>
+            <view>兑换课程</view>
+            <view>兑换码兑换课程</view>
+        </li>
+        <li>
+            <image src="/publice/img/myimg/地址管理.png"></image>
+            <view>地址管理</view>
+            <view>收货地址</view>
+        </li>
+
+    </view>
+
+
+    <!-- 我的收藏 -->
+    <view class="shoucang">
+       <li>
+          <image src="/publice/img/myimg/我的收藏.png"></image>
+          <p>我的收藏</p>
+          <image src="/publice/img/箭头.png"></image>
+       </li>
+       <li>
+          <image src="/publice/img/myimg/我的会员.png"></image>
+          <p>我的会员</p>
+          <image src="/publice/img/箭头.png"></image>
+       </li>
+       <li>
+          <image src="/publice/img/myimg/我的优惠券.png"></image>
+          <p>我的优惠券</p>
+          <image src="/publice/img/箭头.png"></image>
+       </li>
+      
+    </view>
+    <view class="shoucang">
+       <li>
+          <image src="/publice/img/myimg/我的收藏.png"></image>
+          <p>我的收藏</p>
+          <image src="/publice/img/箭头.png"></image>
+       </li>
+       <li>
+          <image src="/publice/img/myimg/我的会员.png"></image>
+          <p>我的会员</p>
+          <image src="/publice/img/箭头.png"></image>
+       </li>
+       <li>
+          <image src="/publice/img/myimg/我的优惠券.png"></image>
+          <p>我的优惠券</p>
+          <image src="/publice/img/箭头.png"></image>
+       </li>
+      
+    </view>
+
+</view>

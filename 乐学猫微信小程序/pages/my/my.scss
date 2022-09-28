@@ -1,0 +1,107 @@
+.zbox {
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 100vh;
+    .header {
+        position: relative;
+
+        image {
+            width: 100%;
+            height: 400rpx;
+        }
+
+        .loginmbile {
+            width: 300rpx;
+            height: 240rpx;
+            // background-color: yellow;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            text-align: center;
+
+            .loginimgs {
+                width: 160rpx;
+                height: 160rpx;
+            }
+
+            view {
+                color: white;
+                font-size: 48rpx;
+            }
+        }
+
+        .shezhi {
+            width: 40rpx;
+            height: 40rpx;
+            position: absolute;
+            right: 40rpx;
+            top: 40rpx;
+        }
+    }
+
+    .mbile {
+        width: 100%;
+        height: 90px;
+        background-color: white;
+        display: flex;
+        margin-top: 10px;
+        li {
+            width: 33%;
+            height: 90px;
+            // line-height: 90px;
+            text-align: center;
+            image {
+                width: 30px;
+                height: 30px;
+            }
+
+            view:nth-child(3) {
+                font-size: 16px;
+                color: gray;
+            }
+        }
+
+        li:nth-child(1) {
+            border-right: 1px solid gray;
+        }
+
+        li:nth-child(2) {
+            border-right: 1px solid gray;
+        }
+    }
+   .shoucang{
+       width: 100%;
+       height: 150px;
+    //    background-color: red;
+       display: flex;
+       flex-direction: column;
+       margin-top: 10px;
+       li{
+           width: 100%;
+           height: 50px;
+           background-color: white;
+           line-height: 50px;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           image{
+               width: 20px;
+               height: 20px;
+               margin-left: 15px;
+               margin-right: 15px;
+           }
+           p{
+               margin-left: -250px;
+           }
+       }
+       li:nth-child(1){
+           border-bottom: 1px solid gray;
+       }
+       li:nth-child(2){
+        border-bottom: 1px solid gray;
+    }
+    }
+}
