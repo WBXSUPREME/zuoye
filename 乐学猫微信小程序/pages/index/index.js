@@ -1,15 +1,19 @@
 // index.js
 // 获取应用实例
 const app = getApp()
-
+import {getTopCate,swiper,classify} from '../../api/api.js'
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    canIUseGetUserProfile: false,
-    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false
+    list:[],
+    currentindex:0,
+    swiperlist:[], //轮播图
+    classify:[], //免费直播课
+  },
+  highlight(e){
+    //   console.log(e.currentTarget.dataset.index);
+      this.setData({
+            currentindex:e.currentTarget.dataset.index
+          })
   },
   // 事件处理函数
   bindViewTap() {
@@ -18,11 +22,30 @@ Page({
     })
   },
   onLoad() {
-    if (wx.getUserProfile) {
-      this.setData({
-        canIUseGetUserProfile: true
+    getTopCate().then(res => {
+        // console.log([{id:-1,title:"精选"},...res.data.data]);
+        this.setData({
+            list:[{id:-1,title:"精选"},...res.data.data]
+        })
+      }).catch(err => {
+        wx.showToast({
+            title: err.message,
+        })
       })
-    }
+      // 轮播图
+      swiper().then(res => {
+        console.log(res.data.data);
+        this.setData({
+          swiperlist:res.data.data
+        })
+      })
+      //免费直播课
+      classify().then(res => {
+        console.log(res.data.data.course_list);
+        this.setData({
+          classify:res.data.data.course_list
+        })
+      })
   },
   getUserProfile(e) {
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗

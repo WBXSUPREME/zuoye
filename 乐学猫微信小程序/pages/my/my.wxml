@@ -1,10 +1,13 @@
 <view class="zbox">
     <view class="header">
         <image src="/publice/img/微信图片_20220928190205.png"></image>
+        <navigator url="../login/login">
         <view class="loginmbile">
             <image class="loginimgs" src="/publice/img/loginimg.png"></image>
             <view>登录/注册</view>
         </view>
+        </navigator>
+        
         <image class="shezhi" src="/publice/img/设置.png"></image>
     </view>
     <view class="mbile">
@@ -41,28 +44,23 @@
        </li>
        <li>
           <image src="/publice/img/myimg/我的优惠券.png"></image>
-          <p>我的优惠券</p>
+          <p class="youhui">我的优惠券</p>
           <image src="/publice/img/箭头.png"></image>
        </li>
       
     </view>
-    <view class="shoucang">
+
+    <view class="xiaoxi">
        <li>
-          <image src="/publice/img/myimg/我的收藏.png"></image>
-          <p>我的收藏</p>
+          <image src="/publice/img/myimg/我的消息.png"></image>
+          <p>我的消息</p>
           <image src="/publice/img/箭头.png"></image>
        </li>
        <li>
-          <image src="/publice/img/myimg/我的会员.png"></image>
-          <p>我的会员</p>
+          <image src="/publice/img/myimg/问题反馈.png"></image>
+          <p>问题反馈</p>
           <image src="/publice/img/箭头.png"></image>
        </li>
-       <li>
-          <image src="/publice/img/myimg/我的优惠券.png"></image>
-          <p>我的优惠券</p>
-          <image src="/publice/img/箭头.png"></image>
-       </li>
-      
     </view>
 
 </view>

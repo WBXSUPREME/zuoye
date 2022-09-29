@@ -4,7 +4,9 @@
         "pages/courses/courses",
         "pages/cathome/cathome",
         "pages/tool/tool",
-        "pages/my/my"
+        "pages/my/my",
+        "pages/login/login",
+        "pages/zhuce/zhuce"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -15,7 +17,7 @@
     "tabBar": {
         "list": [
             {
-                "pagePath":"pages/index/index",
+                "pagePath": "pages/index/index",
                 "text": "选课",
                 "iconPath": "/publice/img/选课前.png",
                 "selectedIconPath": "/publice/img/选课后.png"

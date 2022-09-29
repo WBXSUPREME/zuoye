@@ -1,11 +1,12 @@
 // pages/cathome/cathome.js
+const order = ['demo1', 'demo2', 'demo3']
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-
+        toView: 'green'
     },
 
     /**
@@ -61,6 +62,9 @@ Page({
      * 用户点击右上角分享
      */
     onShareAppMessage() {
-
+        return {
+            title: 'scroll-view',
+            path: 'page/component/pages/scroll-view/scroll-view'
+          }
     }
 })
