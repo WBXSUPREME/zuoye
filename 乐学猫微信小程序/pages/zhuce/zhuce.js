@@ -1,39 +1,48 @@
 // pages/login/login.js
-import {yzmimg} from '../../api/api'
+import {
+    yzmimg,
+    phoneyzm
+} from '../../api/api'
 Page({
-    
     /**
      * 页面的初始数据
      */
-    data: {
-        imgyzm:{},//图形验证码
-        from:[
-            {
-                mobile:"",//手机号
-                phoneyzm:""//获取手机号验证码
+    data:{
+            imgyzm: {}, //图形验证码
+            from: {
+                mobile: "15290355502", //手机号
+                sms_type: "login"
             }
-        ]
     },
 
 
-   yzm:function(e){
-    // console.log(1);
-    // console.log(e);
-    this.yzmmm()
-   },
-   phoneyzms:function(e){//获取手机验证码
-     console.log('获取手机验证码');
-   },
-    yzmmm(){
-          yzmimg().then((res)=>{
-    console.log(res.data.data.url);
-    this.setData({
-        imgyzm:res.data.data.url
-    })
-    this.imgyzm=res.data.data.url
-    console.log(this.imgyzm);
-})
-   },
+    yzm: function (e) {
+        // console.log(1);
+        // console.log(e);
+        this.yzmmm()
+    },
+    phoneyzms: function () { //获取手机验证码
+        console.log('获取手机验证码');
+        this.phoneyzmss()
+    },
+    yzmmm() { //图片验证码的方法
+        yzmimg().then((res) => {
+            console.log(res.data.data.url);
+            this.setData({
+                imgyzm: res.data.data.url
+            })
+            this.imgyzm = res.data.data.url
+            console.log(this.imgyzm);
+        })
+    },
+    phoneyzmss() { //获取手机验证码的方法
+        phoneyzm(this.from).then((res) => {
+            console.log(res);
+        })
+    },
+
+
+
 
 
     /**
@@ -41,9 +50,6 @@ Page({
      */
     onLoad(options) {
         this.yzmmm()
-        phoneyzm().then((res)=>{
-            console.log(res);
-        })
     },
 
     /**

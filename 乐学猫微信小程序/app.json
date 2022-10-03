@@ -2,7 +2,7 @@
     "pages": [
         "pages/index/index",
         "pages/courses/courses",
-        "pages/cathome/cathome",
+        "pages/course/course",
         "pages/tool/tool",
         "pages/my/my",
         "pages/login/login",
@@ -29,7 +29,7 @@
                 "selectedIconPath": "/publice/img/我的课后.png"
             },
             {
-                "pagePath": "pages/cathome/cathome",
+                "pagePath": "pages/course/course",
                 "text": "喵屋",
                 "iconPath": "/publice/img/喵屋前.png",
                 "selectedIconPath": "/publice/img/喵屋后.png"

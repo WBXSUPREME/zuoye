@@ -9,7 +9,7 @@
             <image src="/publice/img/loginimg/手机.png"></image>
             <input type="text" v-model="from.mobile" placeholder="请输入手机号" />
             <!-- 获取验证码占位 -->
-            <view class="yzms" bindtap="phoneyzms()">获取验证码</view>
+            <view class="yzms" bindtap="phoneyzms">获取验证码</view>
         </view>
         <view class="inputx">
             <image src="/publice/img/loginimg/盾.png"></image><input type="text" placeholder="请输入验证码" />
@@ -30,6 +30,8 @@
 <view class="loginbuttonbottom">
     <p>未注册的手机号码将自动注册</p>
     <!-- <navigator url="../zhuce/zhuce"> -->
-    <p>密码登录</p>
+    <navigator url="../login/login">
+     <p>密码登录</p>
+    </navigator>
     <!-- </navigator> -->
 </view>

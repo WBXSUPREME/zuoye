@@ -64,9 +64,11 @@
 }
 
 .inp .inputs view:nth-child(1) .yzms {
-  width: 120px;
+  width: 108px;
   height: 30px;
   background-color: #f15a24;
+  color: white;
+  text-align: center;
 }
 
 .inp .inputs view:nth-child(3) {
