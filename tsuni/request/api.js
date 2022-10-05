@@ -36,3 +36,28 @@ export const classxx=async()=>{
 	})
 	return data
 }
+
+//搜索
+export const searchs=async(query)=>{
+	let data=await http({
+		url:'/goods/qsearch',
+		method:'get',
+		data:{
+			query
+		}
+	})
+	return data
+}
+
+
+//s
+export const goods=async(goods_id)=>{
+	let data=await http({
+		url:'/goods/detail',
+		method:'get',
+		data:{
+			goods_id
+		}
+	})
+	return data
+}

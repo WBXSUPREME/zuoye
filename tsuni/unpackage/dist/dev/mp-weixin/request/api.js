@@ -21,6 +21,28 @@ const classxx = async () => {
   });
   return data;
 };
+const searchs = async (query) => {
+  let data = await request_http.http({
+    url: "/goods/qsearch",
+    method: "get",
+    data: {
+      query
+    }
+  });
+  return data;
+};
+const goods = async (goods_id) => {
+  let data = await request_http.http({
+    url: "/goods/detail",
+    method: "get",
+    data: {
+      goods_id
+    }
+  });
+  return data;
+};
 exports.classxx = classxx;
 exports.floorList = floorList;
+exports.goods = goods;
 exports.nav1 = nav1;
+exports.searchs = searchs;

@@ -1,1 +1,1 @@
-<view class="data-v-7978d3e4"><view class="searchbutton data-v-7978d3e4"><button class="data-v-7978d3e4">搜索</button></view></view>
+<view class="data-v-7978d3e4"><view class="searchbutton data-v-7978d3e4"><button class="data-v-7978d3e4" bindtap="{{a}}">搜索</button></view></view>

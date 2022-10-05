@@ -1,19 +1,25 @@
 <template>
 	<view>
 		<view class="searchbutton">
-			<button>搜索</button>
+			<button @click="jumpserch">搜索</button>
 		</view>
 	</view>
 </template>
 
-<script>
-	export default {
-		name:"headerbutton",
-		data() {
-			return {
-				
-			};
-		}
+<script setup>
+	
+	const jumpserch=()=>{
+		console.log(1);
+		uni.navigateTo({
+			url: '/pages/seaconcent/seaconcent',
+			success: res => {
+				console.log('跳转成功');
+			},
+			fail: () => {
+				console.log('跳转失败');
+			},
+			complete: () => {}
+		});
 	}
 </script>
 

@@ -1,47 +1,48 @@
 {
-    "pages": [
-        "pages/index/index",
-        "pages/classx/classx",
-        "pages/car/car",
-        "pages/my/my"
-    ],
-    "window": {
-        "navigationBarTextStyle": "black",
-        "navigationBarTitleText": "xxxx",
-        "navigationBarBackgroundColor": "#F8F8F8",
-        "backgroundColor": "#F8F8F8"
-    },
-    "tabBar": {
-        "color": "black",
-        "selectedColor": "black",
-        "borderStyle": "black",
-        "list": [
-            {
-                "pagePath": "pages/index/index",
-                "text": "首页",
-                "iconPath": "static/归档/icon/_home.png",
-                "selectedIconPath": "static/归档/icon/home.png"
-            },
-            {
-                "pagePath": "pages/classx/classx",
-                "text": "分类",
-                "iconPath": "static/归档/icons/category.png",
-                "selectedIconPath": "static/归档/icons/category-o.png"
-            },
-            {
-                "pagePath": "pages/car/car",
-                "text": "阅读",
-                "iconPath": "static/归档/icons/cart_20190818_110336.png",
-                "selectedIconPath": "static/归档/icons/cart-o.png"
-            },
-            {
-                "pagePath": "pages/my/my",
-                "text": "问答",
-                "iconPath": "static/归档/icons/my.png",
-                "selectedIconPath": "static/归档/icons/my-o.png"
-            }
-        ]
-    },
-    "usingComponents": {},
-    "sitemapLocation": "sitemap.json"
+  "pages": [
+    "pages/index/index",
+    "pages/classx/classx",
+    "pages/car/car",
+    "pages/my/my",
+    "pages/seaconcent/seaconcent",
+    "pages/goodsxqs/goodsxqs"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "xxxx",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "black",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/归档/icon/_home.png",
+        "selectedIconPath": "static/归档/icon/home.png"
+      },
+      {
+        "pagePath": "pages/classx/classx",
+        "text": "分类",
+        "iconPath": "static/归档/icons/category.png",
+        "selectedIconPath": "static/归档/icons/category-o.png"
+      },
+      {
+        "pagePath": "pages/car/car",
+        "text": "阅读",
+        "iconPath": "static/归档/icons/cart_20190818_110336.png",
+        "selectedIconPath": "static/归档/icons/cart-o.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "问答",
+        "iconPath": "static/归档/icons/my.png",
+        "selectedIconPath": "static/归档/icons/my-o.png"
+      }
+    ]
+  },
+  "usingComponents": {}
 }

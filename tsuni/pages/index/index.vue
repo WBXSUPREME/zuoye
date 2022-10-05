@@ -4,6 +4,7 @@
 			<button>搜索</button>
 		</view> -->
 		<!-- 头部搜索组件 -->
+		
 		<headerbutton></headerbutton>
 
 		<!-- 轮播图 -->
@@ -69,6 +70,7 @@
 		console.log(res.message);
 		data.louceng = res.message
 	})
+	
 </script>
 
 <style lang="scss" scoped>

@@ -27,6 +27,22 @@
 			"style": {
 				"navigationBarTitleText": ""
 			}
+		},
+		{
+			"path": "pages/seaconcent/seaconcent",
+			"style": {
+				"navigationBarTitleText": "搜索中心",
+				"navigationBarBackgroundColor": "#d75255",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/goodsxqs/goodsxqs",
+			"style": {
+				"navigationBarTitleText": "优购",
+				"navigationBarBackgroundColor": "#d75255",
+				"navigationBarTextStyle": "white"
+			}
 		}
     ],
 	"globalStyle": {
