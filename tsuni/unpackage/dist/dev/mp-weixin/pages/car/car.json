@@ -1,4 +1,7 @@
 {
   "navigationBarTitleText": "",
-  "usingComponents": {}
+  "usingComponents": {
+    "u-checkbox": "../../uni_modules/vk-uview-ui/components/u-checkbox/u-checkbox",
+    "u-number-box": "../../uni_modules/vk-uview-ui/components/u-number-box/u-number-box"
+  }
 }

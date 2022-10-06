@@ -2,5 +2,7 @@
   "navigationBarTitleText": "优购",
   "navigationBarBackgroundColor": "#d75255",
   "navigationBarTextStyle": "white",
-  "usingComponents": {}
+  "usingComponents": {
+    "uni-goods-nav": "../../uni_modules/uni-goods-nav/components/uni-goods-nav/uni-goods-nav"
+  }
 }

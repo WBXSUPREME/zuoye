@@ -32,7 +32,7 @@
       },
       {
         "pagePath": "pages/car/car",
-        "text": "阅读",
+        "text": "购物車",
         "iconPath": "static/归档/icons/cart_20190818_110336.png",
         "selectedIconPath": "static/归档/icons/cart-o.png"
       },
